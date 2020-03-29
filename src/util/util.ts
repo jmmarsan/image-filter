@@ -8,18 +8,33 @@ import Jimp = require('jimp');
 //    inputURL: string - a publicly accessible url to an image file
 // RETURNS
 //    an absolute path to a filtered image locally saved file
-export async function filterImageFromURL(inputURL: string): Promise<string>{
-    return new Promise( async resolve => {
+/*export async function filterImageFromURL(inputURL: string): Promise<string>{
+    try{
         const photo = await Jimp.read(inputURL);
         const outpath = '/tmp/filtered.'+Math.floor(Math.random() * 2000)+'.jpg';
         await photo
         .resize(256, 256) // resize
         .quality(60) // set JPEG quality
         .greyscale() // set greyscale
-        .write(__dirname+outpath, (img)=>{
-            resolve(__dirname+outpath);
-        });
-    });
+        .writeAsync(__dirname+outpath);
+
+        return __dirname+outpath;
+    } catch(err){
+        console.log('Error processing image ');
+        throw err;
+    }
+}*/
+
+export function filterImageFromURL(inputURL: string): Promise<string>{
+    const outpath = '/tmp/filtered.'+Math.floor(Math.random() * 2000)+'.jpg';
+    return Jimp.read(inputURL).then((photo) =>{
+        return photo
+        .resize(256, 256) // resize
+        .quality(60) // set JPEG quality
+        .greyscale() // set greyscale
+        .writeAsync(__dirname+outpath);
+    }).then((res) => __dirname+outpath ) 
+     .catch((err) => {throw err;});
 }
 
 // deleteLocalFiles
