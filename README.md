@@ -1,6 +1,4 @@
-[Running example of image filter in AWS Beanstack 
-
- http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg](http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg)
+[Running example of image filter in AWS Beanstack - http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg](http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg)
 
 # Udagram Image Filtering Microservice
 
