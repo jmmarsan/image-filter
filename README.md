@@ -1,3 +1,7 @@
+[Running example of image filter in AWS Beanstack 
+
+ http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg](http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg)
+
 # Udagram Image Filtering Microservice
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
