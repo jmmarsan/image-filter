@@ -2,7 +2,8 @@ Running example of image filter in
 
 http://image-filter-dev2.eu-west-2.elasticbeanstalk.com/filteredimage?image_url=https://pindongas.com/wp-content/uploads/2018/11/dulzaina-besso-web.jpg
 
-
+Github repository
+https://github.com/jmmarsan/image-filter
 
 # Udagram Image Filtering Microservice
 
